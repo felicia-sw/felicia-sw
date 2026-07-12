@@ -1,0 +1,127 @@
+<svg width="900" height="320" viewBox="0 0 900 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07020f"/>
+      <stop offset="0.5" stop-color="#150829"/>
+      <stop offset="1" stop-color="#0a0118"/>
+    </linearGradient>
+    <radialGradient id="orbCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbPurple" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbPink" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#ec4899" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="asciiGrad" x1="70" y1="0" x2="830" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee">
+        <animate attributeName="stop-color" values="#22d3ee;#a855f7;#ec4899;#22d3ee" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#a855f7">
+        <animate attributeName="stop-color" values="#a855f7;#ec4899;#22d3ee;#a855f7" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899;#22d3ee;#a855f7;#ec4899" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="cardSheen" x1="0" y1="48" x2="0" y2="160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="70" y1="48" x2="830" y2="272" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="0" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blurXL" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="70" y="48" width="760" height="224" rx="20"/>
+    </clipPath>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#ffffff" stroke-opacity="0.045" fill="none"/>
+    </pattern>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.2" y="0" fill="#000000" fill-opacity="0.14"/>
+    </pattern>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .fadeup { opacity: 0; animation: fadeup 0.9s ease-out forwards; }
+      .d1 { animation-delay: 0.15s; } .d2 { animation-delay: 0.4s; } .d3 { animation-delay: 0.7s; }
+      @keyframes fadeup { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .pulse { animation: pulse 3.5s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: 0.75; } 50% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="320" fill="url(#bg)"/>
+  <rect width="900" height="320" fill="url(#grid)"/>
+
+  <g filter="url(#blurXL)">
+    <circle cx="140" cy="70" r="130" fill="url(#orbCyan)">
+      <animate attributeName="cx" values="140;220;140" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="70;140;70" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="250" r="150" fill="url(#orbPurple)">
+      <animate attributeName="cx" values="760;660;760" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="250;170;250" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="480" cy="40" r="110" fill="url(#orbPink)">
+      <animate attributeName="cx" values="480;540;480" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="40;90;40" dur="14s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- glass card -->
+  <g class="fadeup d1">
+    <rect x="70" y="48" width="760" height="224" rx="20" fill="#ffffff" fill-opacity="0.055"/>
+    <rect x="70" y="48" width="760" height="110" rx="20" fill="url(#cardSheen)" clip-path="url(#cardClip)"/>
+    <rect x="70.5" y="48.5" width="759" height="223" rx="19.5" stroke="url(#cardBorder)"/>
+
+    <!-- terminal chrome -->
+    <circle cx="100" cy="76" r="5.5" fill="#ff5f56" fill-opacity="0.85"/>
+    <circle cx="120" cy="76" r="5.5" fill="#ffbd2e" fill-opacity="0.85"/>
+    <circle cx="140" cy="76" r="5.5" fill="#27c93f" fill-opacity="0.85"/>
+    <text x="450" y="81" text-anchor="middle" class="mono" font-size="12" fill="#ffffff" fill-opacity="0.4">felicia@github: ~/profile</text>
+    <line x1="70" y1="94" x2="830" y2="94" stroke="#ffffff" stroke-opacity="0.1"/>
+  </g>
+
+  <!-- ascii art -->
+  <g class="fadeup d2" filter="url(#glow)">
+    <text xml:space="preserve" x="450" y="128" text-anchor="middle" class="mono" font-size="14" fill="url(#asciiGrad)">███████╗███████╗██╗     ██╗ ██████╗██╗ █████╗ </text>
+    <text xml:space="preserve" x="450" y="145" text-anchor="middle" class="mono" font-size="14" fill="url(#asciiGrad)">██╔════╝██╔════╝██║     ██║██╔════╝██║██╔══██╗</text>
+    <text xml:space="preserve" x="450" y="162" text-anchor="middle" class="mono" font-size="14" fill="url(#asciiGrad)">█████╗  █████╗  ██║     ██║██║     ██║███████║</text>
+    <text xml:space="preserve" x="450" y="179" text-anchor="middle" class="mono" font-size="14" fill="url(#asciiGrad)">██╔══╝  ██╔══╝  ██║     ██║██║     ██║██╔══██║</text>
+    <text xml:space="preserve" x="450" y="196" text-anchor="middle" class="mono" font-size="14" fill="url(#asciiGrad)">██║     ███████╗███████╗██║╚██████╗██║██║  ██║</text>
+    <text xml:space="preserve" x="450" y="213" text-anchor="middle" class="mono" font-size="14" fill="url(#asciiGrad)">╚═╝     ╚══════╝╚══════╝╚═╝ ╚═════╝╚═╝╚═╝  ╚═╝</text>
+  </g>
+
+  <g class="fadeup d3">
+    <text x="450" y="246" text-anchor="middle" class="mono pulse" font-size="13" letter-spacing="5" fill="#9ca3af">✦ WEB · DATA · RESEARCH ✦</text>
+  </g>
+
+  <!-- scanlines + moving sweep, clipped to card -->
+  <g clip-path="url(#cardClip)">
+    <rect x="70" y="48" width="760" height="224" fill="url(#scan)"/>
+    <rect x="70" y="20" width="760" height="46" fill="url(#sweep)">
+      <animate attributeName="y" values="20;260;20" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

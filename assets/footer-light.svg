@@ -1,0 +1,21 @@
+<svg width="900" height="90" viewBox="0 0 900 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fg" x1="250" y1="0" x2="650" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0891b2">
+        <animate attributeName="stop-color" values="#0891b2;#db2777;#0891b2" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#db2777">
+        <animate attributeName="stop-color" values="#db2777;#0891b2;#db2777" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <style>
+      .mono { font-family: 'SFMono-Regular', 'Fira Code', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .float { animation: float 4s ease-in-out infinite; }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    </style>
+  </defs>
+  <g class="float">
+    <text x="450" y="42" text-anchor="middle" class="mono" font-size="17" letter-spacing="3" fill="url(#fg)">✦ thanks for stopping by ✦</text>
+    <text x="450" y="70" text-anchor="middle" class="mono" font-size="12" letter-spacing="2" fill="#64748b" opacity="0.8">// keep building cool things</text>
+  </g>
+</svg>
