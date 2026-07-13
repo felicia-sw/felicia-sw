@@ -49,6 +49,42 @@ student & researcher,<br>always learning
 
 ✦ ─────────────────────── ✦ ─────────────────────── ✦
 
+<!-- ═══════════════ AVAILABILITY ═══════════════ -->
+
+🟢 **open to internships & freelance web / ML work** · reach me below ↓
+
+✦ ─────────────────────── ✦ ─────────────────────── ✦
+
+<!-- ═══════════════ HIGHLIGHTS ═══════════════ -->
+
+## 🏆 highlights
+
+```text
+🥇  ICOMBUS 2025 — Best Paper, scalable web solutions for small enterprises
+📝  4 papers authored (incl. a credit-card fraud-detection study)
+🍎  Apple Developer Academy — Foundation alum, SwiftUI/iOS
+🎓  Informatics @ Universitas Ciputra Surabaya — CGPA 3.88
+🌏  trilingual — Bahasa Indonesia · English · Chinese (HSK 4)
+```
+
+✦ ─────────────────────── ✦ ─────────────────────── ✦
+
+<!-- ═══════════════ FEATURED PROJECTS ═══════════════ -->
+
+## 🚀 featured projects
+
+**[sword-portfolio](https://github.com/felicia-sw/sword-portfolio)** — freelance dev portfolio site · live at [sword-portfolio.vercel.app](https://sword-portfolio.vercel.app) · Next.js · TypeScript
+
+**[UKM Kanvas](https://github.com/felicia-sw/UKM_Kanvas_blade)** — organization website for a Surabaya student org, shipped to a real client · Laravel · Blade
+
+**[Vertix](https://github.com/felicia-sw/Vertix)** — SwiftUI iOS + Apple Watch app scoring posture in real time via on-device MediaPipe pose detection · final Apple Academy team project; built the AI posture-scoring engine, a memory-crash fix, and unit tests
+
+**[InterviewIQ](https://github.com/felicia-sw/InterviewIQ)** — offline-first SwiftUI app for scoring interview candidates against a weighted rubric, syncing once back online · built live rating, role-based access, and the offline-sync layer
+
+**[credit-card-fraud](https://github.com/felicia-sw/credit-card-fraud)** · **[chicago-crime-forecasting](https://github.com/felicia-sw/chicago-crime-forecasting)** — applied ML notebooks (fraud detection, time-series crime forecasting), backing published research
+
+✦ ─────────────────────── ✦ ─────────────────────── ✦
+
 <!-- ═══════════════ TECH STACK ═══════════════ -->
 
 ## ⚡ tech stack
