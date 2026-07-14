@@ -73,8 +73,6 @@ student & researcher,<br>always learning
 
 ## 🚀 featured projects
 
-**[sword-portfolio](https://github.com/felicia-sw/sword-portfolio)** — freelance dev portfolio site · live at [sword-portfolio.vercel.app](https://sword-portfolio.vercel.app) · Next.js · TypeScript
-
 **[UKM Kanvas](https://github.com/felicia-sw/UKM_Kanvas_blade)** — organization website for a Surabaya student org, shipped to a real client · Laravel · Blade
 
 **[Vertix](https://github.com/felicia-sw/Vertix)** — SwiftUI iOS + Apple Watch app scoring posture in real time via on-device MediaPipe pose detection · final Apple Academy team project; built the AI posture-scoring engine, a memory-crash fix, and unit tests
